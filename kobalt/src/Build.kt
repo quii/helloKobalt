@@ -3,19 +3,22 @@ import com.beust.kobalt.plugin.packaging.*
 import com.beust.kobalt.plugin.application.*
 import com.beust.kobalt.plugin.kotlin.*
 
-val p = project {
+val kotlinVersion = "1.1.2"
+val http4kVersion = "2.17.1"
+
+val web = project {
     name = "hellokobalt"
     group = "com.quii"
     artifactId = name
     version = "0.1"
 
     dependencies {
-        compile("org.jetbrains.kotlin:kotlin-runtime:1.1.2")
-        compile("org.jetbrains.kotlin:kotlin-stdlib:1.1.2")
-        compile("org.http4k:http4k-core:2.11.2")
-        compile("org.http4k:http4k-server-jetty:2.11.2")
-        compile("org.http4k:http4k-client-apache:2.11.2")
-        compile("org.http4k:http4k-testing-hamkrest:2.17.1")
+        compile("org.jetbrains.kotlin:kotlin-runtime:$kotlinVersion")
+        compile("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
+        compile("org.http4k:http4k-core:$http4kVersion")
+        compile("org.http4k:http4k-server-jetty:$http4kVersion")
+        compile("org.http4k:http4k-client-apache:$http4kVersion")
+        compile("org.http4k:http4k-testing-hamkrest:$http4kVersion")
         compile("com.natpryce:hamkrest:1.4.1.0")
     }
 
