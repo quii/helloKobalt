@@ -1,7 +1,7 @@
 @file:JvmName("main")
 package com.quii.helloweb
 
-import com.quii.hellokobalt.lib.helloHandler
+import com.quii.helloLib.helloHandler
 import org.http4k.core.Method
 import org.http4k.routing.bind
 import org.http4k.routing.routes
