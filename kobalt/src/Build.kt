@@ -50,7 +50,6 @@ val web = project(lib) {
         compile("org.http4k:http4k-client-apache:$http4kVersion")
         compile("org.http4k:http4k-testing-hamkrest:$http4kVersion")
         compile("com.natpryce:hamkrest:1.4.1.0")
-        compile("com.quii:helloLib:0.1")
     }
 
     dependenciesTest {
